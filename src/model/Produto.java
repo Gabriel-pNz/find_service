@@ -1,4 +1,4 @@
-package data;
+package model;
 
 public class Produto {
 
@@ -11,6 +11,10 @@ public class Produto {
         this.nome = nome;
         this.preco = preco;
         this.descricao = descricao;
+        this.id = id;
+    }
+
+    public Produto(int id) {
         this.id = id;
     }
 
@@ -49,6 +53,13 @@ public class Produto {
     @Override
     public String toString() {
         return "Produto{" + nome + '\'' +  preco + '\'' + descricao + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        Produto produto = (Produto) o;
+
+        return id.equals(produto.id);
     }
 
 }
