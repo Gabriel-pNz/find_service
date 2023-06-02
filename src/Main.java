@@ -26,15 +26,11 @@ public class Main {
 
 
     public static int scanInt(Scanner scanner) {
-        try {
-            if (scanner.hasNextInt()) {
-                return Integer.parseInt(scanner.nextLine());
-            }
-            scanner.nextLine();
-            return -1;
-        } catch (Exception e) {
-            return -1;
+        if (scanner.hasNextInt()) {
+            return Integer.parseInt(scanner.nextLine());
         }
+        scanner.nextLine();
+        return -1;
     }
 
 }

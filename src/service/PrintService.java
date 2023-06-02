@@ -1,8 +1,13 @@
 package service;
 
 public class PrintService {
-
     public void boasVindas() {
+        System.out.println("______     _______  ");
+        System.out.println("|  ____|  / ______\\ ");
+        System.out.println("| |__    | |_____  ");
+        System.out.println("|  __|   \\_______ \\");
+        System.out.println("| |        ______| |");
+        System.out.println("|_|      |______/_/ ");
         printLoopWithSleep("=", 10, 30);
         printMessageWithSleep("\nBem vindo ao Find-Service\n", 200);
         printLoopWithSleep("=", 10, 30);

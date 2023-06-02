@@ -25,7 +25,6 @@ public class ProdutoService {
 
     public void adicionarProduto(Produto novoProduto) {
         produtos.add(novoProduto);
-
     }
 
     public void deletarProduto(int index) {
