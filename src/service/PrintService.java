@@ -19,6 +19,7 @@ public class PrintService {
         printMessageWithSleep("2 - Adicionar um Produto\n", 250);
         printMessageWithSleep("3 - Remover um Produto\n", 250);
         printMessageWithSleep("4 - Mostrar um Produto\n", 250);
+        printMessageWithSleep("5 - Atualizar um Produto\n", 250);
         printMessageWithSleep("0 - Sair\n", 250);
     }
 

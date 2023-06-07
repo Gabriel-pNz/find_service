@@ -52,7 +52,7 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" + nome + '\'' +  preco + '\'' + descricao + '}';
+        return "Produto{" + nome + '\'' +  preco + '\'' + descricao + '\'' + id +'}';
     }
 
     @Override

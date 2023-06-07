@@ -1,7 +1,6 @@
 package service;
 
 import model.Produto;
-
 import java.util.ArrayList;
 
 public class ProdutoService {
@@ -15,8 +14,12 @@ public class ProdutoService {
         if (index < 0 || index > produtos.size()) {
             throw new RuntimeException("NAO DA PRA SEGUIR");
         }
-
-        return produtos.get(index);
+            for (Produto produto : produtos){
+                if(produto.getId() == index){
+                    return produto;
+                }
+            }
+        throw new RuntimeException("PRODUTO NAO ENCONTRADO");
     }
 
     public ArrayList<Produto> listarProdutos() {
@@ -27,8 +30,8 @@ public class ProdutoService {
         produtos.add(novoProduto);
     }
 
-    public void deletarProduto(int index) {
-        produtos.remove(index);
+    public void deletarProduto(int id) {
+        produtos.remove(buscarUm(id));
     }
 
     public void alterarProduto(Produto produtoNovo) {
