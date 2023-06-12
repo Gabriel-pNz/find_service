@@ -26,7 +26,7 @@ public class Main {
                 String nome = scanner.nextLine();
 
                 System.out.println("Informe o preço do produto");
-                double preco = scanDouble(scanner);
+                double preco = Double.parseDouble(scanner.nextLine());
 
                 System.out.println("Informe uma descrição para o produto");
                 String descricao = scanner.nextLine();
