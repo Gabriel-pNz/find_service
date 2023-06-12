@@ -49,19 +49,20 @@ public class ProdutoService extends Repositorio {
 
     @Override
     public void atualizar(Produto produtoNovo) {
-        for (Produto p: produtos) {
-            if(p.getId().equals(produtoNovo.getId())) {
-                if (produtoNovo.getNome() != null) {
-                    p.setNome(produtoNovo.getNome());
-                }
-                if (produtoNovo.getPreco() != null) {
-                    p.setPreco(produtoNovo.getPreco());
-                }
-                if (produtoNovo.getDescricao() != null) {
-                    p.setDescricao(produtoNovo.getDescricao());
-                }
-            }
-        }
+        throw new UnsupportedOperationException();
+//        for (Produto p: produtos) {
+//            if(p.getId().equals(produtoNovo.getId())) {
+//                if (produtoNovo.getNome() != null) {
+//                    p.setNome(produtoNovo.getNome());
+//                }
+//                if (produtoNovo.getPreco() != null) {
+//                    p.setPreco(produtoNovo.getPreco());
+//                }
+//                if (produtoNovo.getDescricao() != null) {
+//                    p.setDescricao(produtoNovo.getDescricao());
+//                }
+//            }
+//        }
 
     }
 
