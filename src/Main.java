@@ -18,7 +18,7 @@ public class Main {
             option = scanInt(scanner);
 
             if (option == 1) {
-                System.out.println(produtoService.listarProdutos());
+                System.out.println(produtoService.listar());
 
             } else if (option == 2) {
 
@@ -34,18 +34,18 @@ public class Main {
                 System.out.println("Informe um id para o produot");
                 int id = scanInt(scanner);
 
-                produtoService.adicionarProduto(new Produto(nome, preco, descricao, id));
+                produtoService.adicionar(new Produto(nome, preco, descricao, id));
 
             } else if (option == 3) {
 
                 System.out.println("Informe o index do produto a ser removido");
                 int index = scanInt(scanner);
-                produtoService.deletarProduto(index);
+                produtoService.remover(index);
 
             } else if (option == 4) {
                 System.out.println("Informe o ID do produto que deseja consultar");
                 int resposta = scanInt(scanner);
-                System.out.println(produtoService.buscarUm(resposta));
+                System.out.println(produtoService.buscar(resposta));
 
             } else if (option == 5) {
 
@@ -61,7 +61,7 @@ public class Main {
                 System.out.println("Informe o novo id do produto");
                 int id = scanInt(scanner);
 
-                produtoService.alterarProduto(new Produto(nome, preco, descricao, id));
+                produtoService.atualizar(new Produto(nome, preco, descricao, id));
             } else {
                 System.out.println("Valor inválido, tente novamente!");
             }
