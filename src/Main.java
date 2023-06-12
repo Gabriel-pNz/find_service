@@ -53,7 +53,7 @@ public class Main {
                 String nome = scanner.nextLine();
 
                 System.out.println("Informe o  novo preço do produto");
-                double preco = scanDouble(scanner);
+                double preco = Double.parseDouble(scanner.nextLine());
 
                 System.out.println("Informe a nova descrição do produto");
                 String descricao = scanner.nextLine();
